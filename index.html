@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1366, initial-scale=1" />
+  <title>Lachevsky — О компании</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="wrap header__row">
+        <a class="brand" href="#top" aria-label="Lachevsky">
+          <img class="brand__mark" src="./assets/Vector.png" alt="LG" />
+        </a>
+
+        <nav class="nav">
+          <a class="nav__link" href="#about">О компании</a>
+          <a class="nav__link" href="#jobs">Работа у нас</a>
+          <a class="nav__link" href="#projects">Проекты</a>
+          <a class="nav__link" href="#contacts">Контакты</a>
+        </nav>
+
+        <a class="btn btn--ghost" href="#contacts">
+          Обсудить проект <span class="btn__arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="wrap hero__inner">
+        <!-- 3D LOGO (draggable) -->
+     <div class="logo3d" id="logo3d" aria-label="3D logo">
+  <div class="logo3d__cube" id="logo3dCube">
+    <div class="logo3d__inner">
+      <div class="face face--front"><img src="./assets/Vector.png" alt=""></div>
+      <div class="face face--back"><img src="./assets/Vector.png" alt=""></div>
+      <div class="face face--right"></div>
+      <div class="face face--left"></div>
+      <div class="face face--top"></div>
+      <div class="face face--bottom"></div>
+    </div>
+  </div>
+</div>
+
+
+        <h1 class="hero__title">
+          <span class="hero__title-line">
+            <span class="hero__decor">
+              <img src="./assets/Rectangle%20161124541.png" alt="" aria-hidden="true">
+            </span>
+            <span class="hero__word hero__word--marked">Создаем</span> продукты,
+          </span>
+          <span class="hero__title-line">объединяя технологии</span>
+          <span class="hero__title-line">и опыт</span>
+        </h1>
+
+        <div class="hero__badges">
+          <div class="badge"><span class="badge__text">Sk</span></div>
+          <div class="badge">
+            <img src="./assets/Russoft_eng_hor_RGB-Photoroom%201.png" alt="RUSSOFT" />
+          </div>
+          <div class="badge">
+            <!-- в assets.zip имя файла может быть с переносом строки, поэтому fallback -->
+            <img
+              src="./assets/%D0%90%D0%BA%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F%E2%80%A8%D0%98%D0%A2%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F.png"
+              alt="Аккредитованная IT компания"
+              onerror="this.style.display='none'; this.parentElement.classList.add('badge--fallback'); this.parentElement.querySelector('span').style.display='block';"
+            />
+            <span class="badge__fallback" style="display:none;">Аккредитованная IT компания</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section class="expertise" id="about">
+      <div class="wrap">
+        <div class="expertise__stage">
+          <div class="expertise__cards">
+
+            <article class="xcard xcard--light" data-xcard data-service="mobile">
+              <div class="xcard__icon">
+                <img src="./assets/5cedb9e86efac74a737155dc7b5caa4bded57e60.png" alt="" aria-hidden="true">
+              </div>
+              <h3 class="xcard__title">Мобильная<br>разработка</h3>
+              <div class="xcard__meta">
+                <span class="chip chip--solid">Стек</span>
+                <span class="chip chip--solid">Стаж</span>
+              </div>
+              <button class="xcard__go" type="button" aria-label="Открыть описание" data-open-modal>↗</button>
+            </article>
+
+            <article class="xcard xcard--light xcard--shift2" data-xcard data-service="web">
+              <div class="xcard__icon">
+                <img src="./assets/a4a6f7ab8ef138a4684568474746ad22655be319.png" alt="" aria-hidden="true">
+              </div>
+              <h3 class="xcard__title">Веб<br>разработка</h3>
+              <div class="xcard__meta">
+                <span class="chip chip--solid">Стек</span>
+                <span class="chip chip--solid">Стаж</span>
+              </div>
+              <button class="xcard__go" type="button" aria-label="Открыть описание" data-open-modal>↗</button>
+            </article>
+
+            <article class="xcard xcard--dark xcard--shift3" data-xcard data-service="design">
+              <div class="xcard__icon">
+                <img src="./assets/ad9c62169d8336510d6111292254c5c8883906a8.png" alt="" aria-hidden="true">
+              </div>
+              <h3 class="xcard__title">Дизайн<br>и UX</h3>
+              <div class="xcard__meta">
+                <span class="chip chip--dark">Стек</span>
+                <span class="chip chip--dark">Стаж</span>
+              </div>
+              <button class="xcard__go" type="button" aria-label="Открыть описание" data-open-modal>↗</button>
+            </article>
+
+            <article class="xcard xcard--dark xcard--shift4" data-xcard data-service="backend">
+              <div class="xcard__icon">
+                <img src="./assets/3829da89e16694c5dc1a91c68c90fe4b90a0a52f.png" alt="" aria-hidden="true">
+              </div>
+              <h3 class="xcard__title">Backend<br>и API</h3>
+              <div class="xcard__meta">
+                <span class="chip chip--dark">Стек</span>
+                <span class="chip chip--dark">Стаж</span>
+              </div>
+              <button class="xcard__go" type="button" aria-label="Открыть описание" data-open-modal>↗</button>
+            </article>
+
+            <!-- плавающие "курсорики" (не привязаны к скроллу) -->
+            <span class="float-cursor float-cursor--1" aria-hidden="true"></span>
+            <span class="float-cursor float-cursor--2" aria-hidden="true"></span>
+            <span class="float-cursor float-cursor--3" aria-hidden="true"></span>
+
+          </div>
+
+          <!-- EXPERTISE marquee -->
+          <div class="expertise__word" aria-hidden="true">
+            <div class="expertise__word-track" id="expertiseMarquee">
+              <span>EXPERTISE</span><span>EXPERTISE</span><span>EXPERTISE</span><span>EXPERTISE</span>
+              <span>EXPERTISE</span><span>EXPERTISE</span><span>EXPERTISE</span><span>EXPERTISE</span>
+            </div>
+            <div class="edge-fade edge-fade--left"></div>
+            <div class="edge-fade edge-fade--right"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO GRID -->
+    <section class="info" id="jobs">
+      <div class="wrap">
+        <div class="info__grid">
+
+          <!-- 10 лет -->
+          <article class="icard icard--years" data-reveal>
+            <div class="icard__title icard__title--xl">10 лет</div>
+            <div class="icard__text">
+              Разрабатываем ПО для ведущих<br>компаний на рынке
+            </div>
+
+            <!-- как на фигме: стрелки + pill -->
+            <div class="years-float" aria-hidden="true">
+              <i class="tri tri--1"></i>
+              <i class="tri tri--2"></i>
+              <i class="tri tri--3"></i>
+
+              <span class="years-pill years-pill--sber">СБЕР</span>
+              <span class="years-pill years-pill--mts">МТС</span>
+              <span class="years-pill years-pill--vtb">ВТБ</span>
+            </div>
+          </article>
+
+          <!-- Следим за технологиями -->
+          <article class="icard icard--tech" data-reveal>
+            <div class="icard__title icard__title--lg">Следим за технологиями</div>
+            <div class="icard__text icard__text--muted">
+              Следим за актуальными технологиями и применяем<br>
+              те инструменты, которые принесут максимальный<br>
+              результат за короткое время
+            </div>
+
+            <div class="tech-marquee" aria-hidden="true">
+              <div class="edge-fade edge-fade--left"></div>
+              <div class="edge-fade edge-fade--right"></div>
+              <div class="tech-track" data-tech-track>
+                <span class="tech-tag">// Azure //</span>
+                <span class="tech-tag">// Node.js //</span>
+                <span class="tech-tag">// MySQL //</span>
+                <span class="tech-tag">// Azure //</span>
+                <span class="tech-tag">// MySQL //</span>
+                <span class="tech-tag">// Azure //</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 250+ -->
+          <article class="icard icard--team" data-reveal>
+            <div class="icard__title icard__title--lg icard__title--dark">250+ специалистов</div>
+            <div class="icard__text icard__text--dark">
+              Уровня middle и senior с опытом работы<br>
+              в различных сферах бизнеса<br>
+              — от гос.структур до фин.сектора
+            </div>
+          </article>
+
+          <!-- Работаем быстро -->
+          <article class="icard icard--fast" data-reveal>
+            <div class="icard__title icard__title--lg">Работаем быстро</div>
+            <div class="icard__text icard__text--muted">
+              Работаем быстро и эффективно<br>
+              на каждом этапе — от заявки<br>
+              и подбора команды до запуска проекта
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERS (marquee) -->
+    <section class="partners">
+      <div class="wrap partners__wrap">
+        <div class="partners__line" aria-hidden="true">
+          <div class="edge-fade edge-fade--left"></div>
+          <div class="edge-fade edge-fade--right"></div>
+
+          <div class="partners__track" id="partnersTrack">
+            <img class="partners__logo" src="./assets/Mask%20group-1%202.png" alt="MOEX" />
+            <img class="partners__logo" src="./assets/Mask%20group-2%202.png" alt="Сбер" />
+            <img class="partners__logo" src="./assets/Mask%20group%204.png" alt="ВТБ" />
+            <div class="partners__logo partners__logo--text">МТС</div>
+            <img class="partners__logo" src="./assets/Mask%20group-1%202.png" alt="MOEX" />
+            <img class="partners__logo" src="./assets/Mask%20group-2%202.png" alt="Сбер" />
+            <img class="partners__logo" src="./assets/Mask%20group%204.png" alt="ВТБ" />
+            <div class="partners__logo partners__logo--text">МТС</div>
+          </div>
+        </div>
+
+        <div class="partners__note">
+          <span>[</span>
+          Сотрудничаем с мобильными операторами,<br>
+          лидерами финансового сектора, e-commerce
+          <span>]</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="wrap">
+        <div class="projects__grid">
+
+          <article class="pcard" data-reveal data-url="#case-falcone">
+            <div class="pcard__media">
+              <img src="./assets/9ff5b8db7d79325cd5fa57d245dc33d82cf4379c.png" alt="Falcone" />
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__chips">
+                <span class="chip chip--mini">Android</span>
+                <span class="chip chip--mini">iOS</span>
+              </div>
+              <div class="pcard__title">[ Falcone ]</div>
+              <div class="pcard__desc">Приложение-агрегатор доставки для селлеров маркетплейсов</div>
+              <button class="pcard__go" type="button" aria-label="Открыть кейс">↗</button>
+            </div>
+          </article>
+
+          <article class="pcard pcard--tall" data-reveal data-url="#case-vtbqr">
+            <div class="pcard__media">
+              <img src="./assets/677a671a3f2e008397fa0350f921fbecb07db581.png" alt="ВТБ бизнес QR" />
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__chips">
+                <span class="chip chip--mini">Android</span>
+                <span class="chip chip--mini">iOS</span>
+              </div>
+              <div class="pcard__title">[ ВТБ бизнес QR ]</div>
+              <div class="pcard__desc">Приложение для самозанятых, ИП и ООО</div>
+              <button class="pcard__go" type="button" aria-label="Открыть кейс">↗</button>
+            </div>
+          </article>
+
+          <article class="pcard pcard--wide" data-reveal data-url="#case-museum">
+            <div class="pcard__media">
+              <img src="./assets/cbc2b093d3f45f4bbb5deb01a2429cf3741b9de4.png" alt="Музей на РЖЯ — дети" />
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__chips">
+                <span class="chip chip--mini">Android</span>
+                <span class="chip chip--mini">iOS</span>
+              </div>
+              <div class="pcard__title">[ Музей на РЖЯ — дети ]</div>
+              <div class="pcard__desc">Приложение-словарь современного искусства для детей</div>
+              <button class="pcard__go" type="button" aria-label="Открыть кейс">↗</button>
+            </div>
+          </article>
+
+          <article class="pcard" data-reveal data-url="#case-nespresso">
+            <div class="pcard__media">
+              <img src="./assets/a284604685cd5e999a56429e8fba900dc29a3751.png" alt="Nespresso Aurora" />
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__chips">
+                <span class="chip chip--mini">Android</span>
+                <span class="chip chip--mini">iOS</span>
+              </div>
+              <div class="pcard__title">[ Nespresso Aurora ]</div>
+              <div class="pcard__desc">Приложение для планшетов в бутиках Nespresso</div>
+              <button class="pcard__go" type="button" aria-label="Открыть кейс">↗</button>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="projects__more">
+          <button class="btn btn--ghost btn--center" type="button">Смотреть все кейсы</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contacts">
+      <div class="wrap footer__top">
+        <div class="footer__cta">
+          <div class="footer__field">
+            <span class="footer__field-label">Telegram nickname</span>
+            <span class="footer__field-value">@username1234</span>
+          </div>
+
+          <a class="btn btn--ghost" href="#contacts">
+            Обсудить проект <span class="btn__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="footer__cols">
+          <div class="footer__col">
+            <a class="footer__link" href="#about">О компании <span>→</span></a>
+            <a class="footer__link" href="#jobs">Работа у нас <span>→</span></a>
+            <a class="footer__link" href="#projects">Проекты <span>→</span></a>
+            <a class="footer__link" href="#contacts">Контакты <span>→</span></a>
+          </div>
+
+          <div class="footer__col footer__col--right">
+            <div class="footer__meta">
+              <div class="footer__meta-row"><span>[ Телефон ]</span> <b>+7 (965) 315-51-79</b></div>
+              <div class="footer__meta-row"><span>[ Адрес ]</span> 119002, г. Москва, ул. Арбат, д. 20</div>
+              <div class="footer__meta-row"><span>[ Почта ]</span> hello@lachevsky.group</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap footer__bottom">
+        <div class="footer__tiny">© ООО “Лачевский девелопмент”</div>
+        <div class="footer__tiny">Документы</div>
+        <div class="footer__tiny">СМИ</div>
+        <div class="footer__tiny">Разработка & IT</div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal" id="serviceModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" type="button" aria-label="Закрыть" data-close-modal>×</button>
+
+      <div class="modal__head">
+        <div class="modal__title" id="modalTitle">Мобильная разработка</div>
+        <div class="modal__chips" id="modalChips">
+          <span class="chip chip--solid">Стек</span>
+          <span class="chip chip--solid">Стек</span>
+          <span class="chip chip--solid">Стек</span>
+          <span class="chip chip--solid">Стек</span>
+        </div>
+      </div>
+
+      <div class="modal__body" id="modalBody">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script src="./script.js"></script>
+</body>
+</html>
